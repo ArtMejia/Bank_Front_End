@@ -6,13 +6,14 @@ import Person from '../components/Person'
 import Persons from '../components/Persons'
 import Splash from '../components/common/Splash'
 import splashImg from '../public/assets/splash.jpg'
+import NavBar from '../components/Navigation/NavBar'
 
 export default function Home() {
   return (
     <div 
       // className={styles.container}
       style={{
-        minHeight:"100vh",
+        minHeight:"150vh",
         // padding:"4rem 0",
         flex:1,
         display:"flex",
@@ -28,6 +29,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <NavBar />
+
       <Splash
         image={splashImg}
       >        
@@ -41,7 +44,7 @@ export default function Home() {
           >DevBank</h1>
           <h2 
             style={{textShadow: '1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff'}}
-          >More Money, More Problems</h2>
+          >More Cache, More Problems</h2>
         </div>
       </Splash>
 
